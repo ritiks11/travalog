@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+.hero {
+  display: flex;
+  // background-color: yellow;
+  width: 1199px;
+  height: 713px;
+  margin-top: 100px;
+  margin-left: 165px;
+
+  &__left {
+    padding: 20px;
+    width: 440px;
+    height: 548px;
+    // background-color: white;
+
+    .exploreWorldBtn {
+      width: 225px;
+      height: 56px;
+      border-radius: 100px;
+      // padding: 16px, 32px, 16px, 32px;
+      // gap: 16px;
+      background-color: white;
+      color: rgba(248, 94, 159, 1);
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16.8px;
+    }
+
+    h1 {
+      font-size: 69px;
+      color: #000;
+      font-weight: 700;
+      line-height: 82.8px;
+
+      span {
+        color: rgba(248, 94, 159, 1);
+      }
+    }
+
+    p {
+      font-size: 18px;
+      color: rgba(25, 24, 37, 0.5);
+      line-height: 28.8px;
+      margin: 20px 0;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+    }
+
+    .hero__buttons {
+      display: flex;
+      gap: 20px;
+
+      button {
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &.hero__get-started {
+          background-color: rgba(93, 80, 198, 1);
+          border-radius: 100px;
+          color: #fff;
+
+          &:hover {
+            background-color: #3700b3;
+          }
+        }
+
+        &.hero__watch-demo {
+          background-color: #fff;
+          border-radius: 100px;
+          color: #6200ea;
+
+          &:hover {
+            background-color: #6200ea;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .layer1 {
+    position: absolute;
+    left: 38rem;
+    .dotted1 {
+      position: absolute;
+      margin-top: -250px;
+    }
+    .dotted2 {
+      position: absolute;
+      margin-top: -285px;
+      margin-left: 157px;
+    }
+    .dotted3 {
+      position: absolute;
+      top: 4rem;
+      left: 39rem;
+    }
+
+    .plane1 {
+      position: absolute;
+      top: 0.5rem;
+      left: 6rem;
+    }
+    .plane2 {
+      position: absolute;
+      top: 11rem;
+      left: 27rem;
+    }
+    .plane3 {
+      position: absolute;
+      top: 3rem;
+      left: 37rem;
+    }
+    .location {
+      position: absolute;
+      top: 7rem;
+      left: 40rem;
+    }
+    .globe {
+      margin-top: 17px;
+    }
+  }
+
+  &__right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // grid-template-rows: repeat(2, 1fr);
+    gap: 25px; /* Adjust the gap between images as needed */
+    position: relative;
+    margin: auto;
+    // background-color: skyblue;
+
+    .hero__image {
+      &--top {
+        margin-top: 5rem;
+        width: 272px;
+        height: 300px;
+        z-index: 1;
+      }
+
+      &--middle {
+        margin-top: 12rem;
+      }
+
+      &--bottom {
+        margin-top: -13rem;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px; /* Adjust border radius if needed */
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    &__left,
+    &__right {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+}
