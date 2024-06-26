@@ -8,7 +8,7 @@ import { useInView } from "react-intersection-observer";
 const Statistics = () => {
   const { ref, inView } = useInView({
     triggerOnce: false, // Trigger only once
-    threshold: 0.5, // Trigger when 50% of the component is visible
+    threshold: 0.2, // Trigger when 50% of the component is visible
   });
 
   const renderCount = (end, limit, displayLimit) => {

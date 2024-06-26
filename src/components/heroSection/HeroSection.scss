@@ -83,7 +83,7 @@
   }
   .layer1 {
     position: absolute;
-    left: 38rem;
+    left: 55rem;
     .dotted1 {
       position: absolute;
       margin-top: -250px;
@@ -158,13 +158,51 @@
     }
   }
 
+  .mobile {
+    display: none;
+  }
+
   @media (max-width: 768px) {
     flex-direction: column;
+    margin-top: 0;
+    margin-left: 0;
 
-    &__left,
-    &__right {
-      width: 100%;
-      padding: 10px;
+    .exploreWorldBtn {
+      width: 150px;
+      height: 40px;
+      font-size: 10px;
+      border: 1px solid pink;
+    }
+
+    &__left {
+      width: 350px;
+      padding: 0;
+      h1 {
+        font-size: 59px;
+        line-height: 75px;
+      }
+      p {
+        font-size: 20px;
+        padding: 5px;
+      }
+
+      button {
+        &.hero__watch-demo {
+          border: 1px solid rgba(93, 80, 198, 1);
+        }
+      }
+    }
+
+    .layer1 {
+      display: none;
+    }
+    .hero__right {
+      display: none;
+    }
+    .mobile {
+      display: block;
+      width: 320px;
+      margin-top: 2rem;
     }
   }
 }

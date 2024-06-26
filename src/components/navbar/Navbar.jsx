@@ -1,32 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/logo.png";
+import ContentWrapper from "../contentWrapper/ContentWrapper";
 import "./Navbar.scss";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
-    <nav className="navbar">
-      <div className="navbar__logo">
-        <img src={logo} alt="logo" />
-      </div>
-      <ul className="navbar__links">
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">Discover</a>
-        </li>
-        <li>
-          <a href="#">Special Deals</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
-      <div className="navbar__auth">
-        <button className="navbar__login">Log In</button>
-        <button className="navbar__signup">Sign Up</button>
-      </div>
-    </nav>
+    <ContentWrapper>
+      <nav className="navbar">
+        <div className="navbar__logo">
+          <img src={logo} alt="logo" />
+        </div>
+        <div
+          className={`hamburger ${isMenuOpen ? "active" : ""}`}
+          onClick={toggleMenu}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul className={`navbar__links ${isMenuOpen ? "active" : ""}`}>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Discover</a>
+          </li>
+          <li>
+            <a href="#">Special Deals</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <div className={`navbar__auth ${isMenuOpen ? "active" : ""}`}>
+          <button className="navbar__login">Log In</button>
+          <button className="navbar__signup">Sign Up</button>
+        </div>
+      </nav>
+    </ContentWrapper>
   );
 };
 export default Navbar;

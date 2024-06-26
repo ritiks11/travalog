@@ -15,9 +15,9 @@ const Services = () => {
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 2.5,
+    slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     centerMode: true,
     centerPadding: "0",
@@ -26,28 +26,27 @@ const Services = () => {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
+          centerPadding: "5rem",
         },
       },
     ],
   };
   return (
-    <div>
-      <div className="ourServices">
-        <div className="info">
-          <p className="text1">SERVICES</p>
-          <p className="text2">Our top value categories for you</p>
-        </div>
-        <div className="carousel">
-          <Slider {...settings}>
-            {cards.map((card, index) => (
-              <div key={index} className="card">
-                <img src={card.image} alt={card.title} className="card-image" />
-                <h3 className="card-title">{card.title}</h3>
-                <p className="card-description">{card.description}</p>
-              </div>
-            ))}
-          </Slider>
-        </div>
+    <div className="ourServices">
+      <div className="info">
+        <p className="text1">SERVICES</p>
+        <p className="text2">Our top value categories for you !</p>
+      </div>
+      <div className="carousel">
+        <Slider {...settings}>
+          {cards.map((card, index) => (
+            <div key={index} className="card">
+              <img src={card.image} alt={card.title} className="card-image" />
+              <h3 className="card-title">{card.title}</h3>
+              <p className="card-description">{card.description}</p>
+            </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );

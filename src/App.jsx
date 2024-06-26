@@ -6,6 +6,7 @@ import PartnerBrands from "./components/partners/PartnerBrands";
 import Services from "./components/services/Services";
 import Statistics from "./components/stats/Statistics";
 import NewsLetter from "./components/newsletter/NewsLetter";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Services />
       <Statistics />
       <NewsLetter />
+      <Footer />
     </div>
   );
 };

@@ -109,3 +109,49 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .statistics {
+    display: flex;
+    flex-direction: column;
+
+    .leftSection {
+      width: 100%;
+      .discountedPrice {
+        top: -3rem;
+        left: 12rem;
+        width: 160px;
+        height: 40px;
+        font-size: 12px;
+        line-height: 10px;
+        border: 1px solid rgba(250, 205, 73, 1);
+      }
+    }
+    .rightSection {
+      width: 400px;
+      .yellowCircle {
+        display: none;
+      }
+      .container {
+        .text1 {
+          font-size: 15px;
+        }
+        .text3 {
+          font-size: 15px;
+          padding: 5px;
+        }
+        .statsContainer {
+          width: 320px;
+          .statBox {
+            font-size: 20px;
+            width: 200px;
+
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
