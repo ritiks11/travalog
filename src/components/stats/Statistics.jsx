@@ -33,7 +33,7 @@ const Statistics = () => {
 
             <div className="statsContainer" ref={ref}>
               <div className="statBox">
-                {inView && renderCount(700, 500, "500+")}
+                {inView && renderCount(500, 500, "500+")}
                 <p>Holiday Package</p>
               </div>
               <div className="statBox">
@@ -45,7 +45,7 @@ const Statistics = () => {
                 <p>Premium Airlines</p>
               </div>
               <div className="statBox">
-                {inView && renderCount(3000, 2000, "2k+")}
+                {inView && renderCount(2000, 2000, "2k+")}
                 <p>Happy Customer</p>
               </div>
             </div>

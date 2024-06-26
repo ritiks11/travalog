@@ -14,8 +14,8 @@ const Footer = () => {
           {/* <h2 className="footer-logo"></h2> */}
           <img src={logo} alt="logo" />
           <p className="footer-text">
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC.
+            Discover unforgettable experiences and create lasting memories with
+            our expertly curated travel services
           </p>
           <div className="footer-social">
             <a
