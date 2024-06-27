@@ -1,22 +1,22 @@
 
 [
     {
-        "image": "../src/assets/serviceBooking.png",
+        "image": "/src/assets/serviceBooking.png",
       "title": "Easy Booking",
       "description": "Square, was moving across the sand in their direction."
     },
     {
-        "image": "../src/assets/serviceBooking.png",
+        "image": "/src/assets/serviceBooking.png",
       "title": "Best Tour Guide",
       "description": "What looked like a small patch of purple grass, above five feet."
     },
     {
-        "image": "../src/assets/serviceBooking.png",
+        "image": "/src/assets/serviceBooking.png",
       "title": "Hotel Booking",
       "description": "Square, was moving across the sand in their direction."
     },
     {
-        "image": "../src/assets/serviceBooking.png",
+        "image": "/src/assets/serviceBooking.png",
       "title": "Easy Booking",
       "description": "Square, was moving across the sand in their direction."
     }
