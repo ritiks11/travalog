@@ -3,7 +3,6 @@
   height: 100%;
   display: flex;
   flex-direction: row;
-  //   background-color: skyblue;
   margin-top: 5rem;
 
   .child {
@@ -15,7 +14,6 @@
   .leftSection {
     width: 50%;
     position: relative;
-    // background-color: gray;
 
     .discountedPrice {
       width: 300px;
@@ -36,7 +34,6 @@
   }
   .rightSection {
     width: 50%;
-    // background-color: blue;
     padding: 10px 0 5px 20px;
     position: relative;
 
@@ -49,7 +46,6 @@
     .container {
       width: 445px;
       height: 100%;
-      //   background-color: yellow;
 
       .text1 {
         font-family: Nunito Sans;

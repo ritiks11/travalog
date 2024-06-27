@@ -15,12 +15,26 @@
     display: none;
     flex-direction: column;
     cursor: pointer;
-    span {
-      height: 2px;
+    .nav__hamburger__line {
+      height: 3px;
       width: 25px;
-      background: #000;
-      margin: 4px 0;
+      background: black;
+      margin: 2.5px 0;
       transition: 0.4s;
+      border-radius: 5px;
+    }
+    &.active {
+      .nav__hamburger__line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+      }
+
+      .nav__hamburger__line:nth-child(2) {
+        opacity: 0;
+      }
+
+      .nav__hamburger__line:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+      }
     }
   }
 
@@ -86,7 +100,7 @@
     // padding: 20px 40px;
 
     &__logo {
-      width: 100px;
+      width: 90px;
     }
 
     &__links {
@@ -96,7 +110,7 @@
   }
   /*---------------------------------------------------------------*/
   @media (max-width: 480px) {
-    padding: 16px 20px;
+    padding: 16px 2px;
     align-items: flex-start;
 
     .hamburger {
@@ -117,27 +131,50 @@
       left: 0;
       justify-content: center;
       align-items: end;
-      width: 100%;
-      top: 60px;
-      background-color: rgba(248, 94, 159, 1);
-      // flex-direction: row;
+      top: 55px;
+      background: linear-gradient(
+        to right,
+        rgba(255, 204, 203, 1) 10%,
+        rgba(255, 255, 255, 1) 90%
+      );
       font-size: 15px;
-      font-weight: 700;
+      font-weight: 600;
       padding: 15px;
+      border-radius: 32px;
+      box-shadow: 0px 41px 89px 0px rgba(0, 0, 0, 0.6);
     }
     &__auth.active {
       display: flex;
       position: absolute;
       flex-direction: column;
       top: 6rem;
-      // background-color: white;
       align-items: start;
     }
     &__links li {
       margin: 10px 0;
+      a {
+        color: #5d50c6;
+      }
     }
 
     &__auth button {
+      padding: 5px 20px;
+      &.navbar__login {
+        background-color: white;
+        color: black;
+        border-radius: 100px;
+        margin-bottom: 1rem;
+        font-size: 12px;
+        border: 1px solid #6200ea;
+      }
+      &.navbar__signup {
+        background-color: #6200ea;
+        color: white;
+        border-radius: 100px;
+        margin-bottom: 1rem;
+        font-size: 12px;
+        border: 1px solid #6200ea;
+      }
     }
   }
 }

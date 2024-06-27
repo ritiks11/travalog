@@ -15,14 +15,14 @@ const Navbar = () => {
         <div className="navbar__logo">
           <img src={logo} alt="logo" />
         </div>
-        <div
+        <a
           className={`hamburger ${isMenuOpen ? "active" : ""}`}
           onClick={toggleMenu}
         >
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+          <span className="nav__hamburger__line"></span>
+          <span className="nav__hamburger__line"></span>
+          <span className="nav__hamburger__line"></span>
+        </a>
         <ul className={`navbar__links ${isMenuOpen ? "active" : ""}`}>
           <li>
             <a href="#">Home</a>
