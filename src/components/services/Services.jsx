@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./style.scss";
-import data from "../../data/index.json";
+import data from "../../../data/index.json";
 
 const Services = () => {
   const [cards, setCards] = useState([]);

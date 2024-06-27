@@ -33,34 +33,46 @@ const HeroSection = () => {
               <button className="hero__watch-demo">Watch Demo</button>
             </div>
           </div>
-          <div className="layer1">
-            <img className="overlap-image globe" src={globe} alt="globe" />
-            <img
-              className="overlap-image dotted1"
-              src={dotted1}
-              alt="airplane"
-            />
-            <img
-              className="overlap-image dotted2"
-              src={dotted2}
-              alt="airplane"
-            />
-            <img
-              className="overlap-image dotted3"
-              src={dotted3}
-              alt="airplane"
-            />
-            <img className="overlap-image plane1" src={plane1} alt="airplane" />
-            <img className="overlap-image plane2" src={plane2} alt="airplane" />
-            <img className="overlap-image plane3" src={plane3} alt="airplane" />
-            <img
-              className="overlap-image location"
-              src={location}
-              alt="airplane"
-            />
-          </div>
 
           <div className="hero__right">
+            <div className="layer1">
+              <img className="overlap-image globe" src={globe} alt="globe" />
+              <img
+                className="overlap-image dotted1"
+                src={dotted1}
+                alt="airplane"
+              />
+              <img
+                className="overlap-image dotted2"
+                src={dotted2}
+                alt="airplane"
+              />
+              <img
+                className="overlap-image dotted3"
+                src={dotted3}
+                alt="airplane"
+              />
+              <img
+                className="overlap-image plane1"
+                src={plane1}
+                alt="airplane"
+              />
+              <img
+                className="overlap-image plane2"
+                src={plane2}
+                alt="airplane"
+              />
+              <img
+                className="overlap-image plane3"
+                src={plane3}
+                alt="airplane"
+              />
+              <img
+                className="overlap-image location"
+                src={location}
+                alt="airplane"
+              />
+            </div>
             <div className="hero__image hero__image--top">
               <img src={destination1} alt="Destination 1" />
             </div>
