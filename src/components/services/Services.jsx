@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./style.scss";
 import data from "../../../data/index.json";
+import serviceBooking from "../../assets/serviceBooking.png";
 
 const Services = () => {
   const [cards, setCards] = useState([]);
@@ -41,7 +42,7 @@ const Services = () => {
         <Slider {...settings}>
           {cards.map((card, index) => (
             <div key={index} className="card">
-              <img src={card.image} alt={card.title} className="card-image" />
+              <img src={serviceBooking} alt="card" className="card-image" />
               <h3 className="card-title">{card.title}</h3>
               <p className="card-description">{card.description}</p>
             </div>
